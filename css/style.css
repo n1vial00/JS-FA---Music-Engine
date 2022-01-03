@@ -5,6 +5,7 @@
 
 html {
     background-color: #ff8d4f;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -16,15 +17,21 @@ nav {
     width: 100vw;
     height: 80px;
 }
+.dropNav {
+    display: none;
+}
+
+.height {
+    height: 80px;
+}
 
 .content {
     font-family: Verdana;
     color: #000000;
     background-color: #ffffff;
-    min-height: calc(100vh - 80px);
     max-width: 1280px;
     margin: auto;
-    padding-top: 80px;
+    padding: 1em;
 }
 
 a {
@@ -40,19 +47,35 @@ a {
 }
 
 
-@media screen and (max-width: 916px) {
-
+@media screen and (max-width: 1000px) {
 
     a.navBut {
-        position: relative;
-        font-size: 2em;
-        left: -100vw;
+        display: none;
     }
 
     a.siteTitle {
-        text-align: center;
-        width: 100vw;
-        
+        display: none;
+    }
+
+    .dropNav {
+        display: flex;
+        position: fixed;
+        background-color: #049994;
+        border: #000000 2px solid;
+    }
+
+    .hiddenOnes {
+        position: relative;
+        display: none;
+        background-color: #049994;
     }
     
+    #hid {
+        border: #000000 2px solid;
+    }
+
+    #hid>div {
+        border: #000000 2px solid;
+    }
+
 }

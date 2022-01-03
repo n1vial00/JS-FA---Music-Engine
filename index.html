@@ -12,34 +12,61 @@
     
     <!-- NAVBAR -->
     <nav>
-        <a href="" class="siteTitle">Music Engine</a>
-        <span class="hiddenOnes">
-            <a href="" class="navBut">Element 1</a>
-            <a href="" class="navBut">Element 2</a>
-            <a href="" class="navBut">About</a>
+        <a href="#home" class="siteTitle">Music Engine</a>
+        <span>
+            <a href="#home" class="navBut">Top Tracks</a>
+            <a href="#simiS" class="navBut">Similar Songs</a>
+            <a href="#about" class="navBut">About</a>
         </span>
     </nav>
-
-
-    <!-- CONTENT -->
-    <div class="content">
-        <h1>Artist Top Tracks!</h1>
-        <div>Artist: <input type="text" id="artistIn"></div>
-        <div><button id="artistBut">Enlighten me</button></div>
-
-        <div id="artistInfoBox"></div>
-
-
-        <h1>Find similar songs!</h1>
-        <div>Artist: <input type="text" id="songInI"></div>
-        <div>Song: <input type="text" id="songInII"></div>
-        <div><button id="songBut">Fetch my tunes</button></div>
-        
-        <div id="getSongContent"></div>
-
+    <!-- DROPDOWN NAV -->
+    <div class="dropNav">
+        <a href="javascript:toggle()" class="siteTitleDrop">Music Engine</a>
+        <div id="hid" class="hiddenOnes">
+            <div><a href="#home" class="navButDrop">Top Tracks</a></div>
+            <div><a href="#simiS" class="navButDrop">Similar Songs</a></div>
+            <div><a href="#about" class="navButDrop">About</a></div>
+        </div>
     </div>
 
-    <!-- DROPDOWN NAV? -->
+    <!-- CONTENT -->
+    <div id="home" class="height"></div>
+    <div class="content">
+        <div>
+            <p>
+                Want to know the top tracks of your favourite artist? 
+                <br>
+                Maybe you want to find similar songs to your favourite?
+                <br>
+                Here you can!
+            </p>
+        </div>
+        <div id="simiS">
+            <h1>Artist Top Tracks!</h1>
+            <div>Artist: <input type="text" id="artistIn"></div>
+            <div><button id="artistBut">Enlighten me</button></div>
+
+            <div id="artistInfoBox"></div>
+        </div>
+
+        <div id="about">
+            <h1>Find similar songs!</h1>
+            <div>Artist: <input type="text" id="songInI"></div>
+            <div>Song: <input type="text" id="songInII"></div>
+            <div><button id="songBut">Fetch me tunes</button></div>
+            
+            <div id="getSongContent"></div>
+        </div>
+        <div>
+            <h1>About</h1>
+            <p>
+                This page was made by Aleksi Viitanen to demonstrate knowledge of REST API usage.
+                <br>
+                Music Engine uses Last.fm API to search their archives.
+            </p>
+        </div>
+    </div>
+
 
 </body>
 </html>
