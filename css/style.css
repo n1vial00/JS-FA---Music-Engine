@@ -21,7 +21,7 @@ nav {
     font-family: Verdana;
     color: #000000;
     background-color: #ffffff;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     max-width: 1280px;
     margin: auto;
     padding-top: 80px;
@@ -34,6 +34,11 @@ a {
     font-size: 3em;
     padding: 0.2em;
 }
+
+.artistDiv {
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 916px) {
 
