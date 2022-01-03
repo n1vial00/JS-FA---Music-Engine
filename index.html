@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Engine</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/code.js"></script>
+    <script src="/js/code.js" defer></script>
 </head>
 <body>
     
@@ -23,7 +23,15 @@
 
     <!-- CONTENT -->
     <div class="content">
-        <h1>Title 1</h1>
+        <h1>Artist search</h1>
+        <input type="text" id="artistIn">
+        <button id="artistBut">Artist</button>
+        <h1>Song search</h1>
+        <input type="text" id="songIn">
+        <button id="songBut">Song</button>
+        
+        <div id="getSongContent"></div>
+
     </div>
 
     <!-- DROPDOWN NAV? -->
